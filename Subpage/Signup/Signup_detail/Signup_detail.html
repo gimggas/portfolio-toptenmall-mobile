@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="Signup_datail.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="headerwrap">
+        <header class="header">
+            <div class="logo">
+                <a href="../../../Main/Main.html"><img src="../../img/logo.png" alt="로고"></a>
+            </div>
+            <input type="checkbox" id="hamBtn">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="../Subpage/Search/Search.html"><i class="xi-search"></i></a></li>
+                    <li><a href="#"><i class="xi-cart-o"></i></a></li>
+                    <label for="hamBtn" class="openBtn">
+                        <li><i class="xi-bars"></i> </li>
+                    </label>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="wrap">
+        <div class="submit_text01">
+            <div class="text_id">
+                <div class="text_id_txt">
+                    아이디<span class="refer">&nbsp;*</span>
+                </div>
+                <div class="text_id_input">
+                    <input type="text" id="id_input" placeholder="6~20자의 영문,숫자 가능">
+                    <button type="button">중복확인</button>
+                </div>
+            </div>
+            <div class="text_pw">
+                <div class="text_pw_txt">
+                    비밀번호<span class="refer">&nbsp;*</span>
+                </div>
+                <div class="text_pw_input">
+                    <input type="text" id="pw_input" placeholder="8~16자의 영문 대문자/소문자,숫자,특수문자 중 3가지 조합">
+                </div>
+            </div>
+            <div class="text_pw_check">
+                <div class="text_pw_check_txt">
+                    비밀번호 확인<span class="refer">&nbsp;*</span>
+                </div>
+                <div class="text_pw__check_input">
+                    <input type="text" id="pw_check_input" placeholder="비밀번호 다시 입력">
+                </div>
+            </div>
+        </div>
+
+        <div class="submit_text02">
+            <div class="text_name">
+                <div class="text_name_txt">
+                    이름<span class="refer">&nbsp;*</span>
+                </div>
+                <div class="text_name_input">
+                    <input type="text" id="name_input">
+                </div>
+            </div>
+            <div class="text_birth">
+                <div class="text_birth_txt">
+                    생년월일
+                </div>
+                <div class="birth">
+                    <select id="birth_year">
+                        <option value="">선택</option>
+                        <option value="2022">2022</option>
+                    </select>
+                    <select id="birth_month">
+                        <option value="">선택</option>
+                        <option value="01">01</option>
+                    </select>
+                    <select id="birth_date">
+                        <option value="">선택</option>
+                        <option value="01">01</option>
+                    </select>
+                </div>
+            </div>
+            <p class="marketing_notice">개인정보처리 방침에 따라 생년월일은 선택 입력사항이며, 미 입력 시 생일 포인트는 지급되지 않습니다.</p>
+            <div class="text_phone_number">
+                <div class="text_phone_number_txt">
+                    휴대폰번호<span class="refer">&nbsp;*</span>
+                </div>
+
+                <select id="user_tel">
+                    <option value="선택"></option>
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                </select>
+                <span>-</span>
+                <input type="text" id="tel_first">
+                <span>-</span>
+                <input type="text" id="tel_last">
+            </div>
+            <div class="text_contact">
+                <div class="text_contact_txt">
+                    연락처<span class="refer">&nbsp;*</span>
+                </div>
+                <select id="user_tel">
+                    <option value="02">02</option>
+                    <option value="031">031</option>
+                </select>
+                <span>-</span>
+                <input type="text" id="tel_first">
+                <span>-</span>
+                <input type="text" id="tel_last">
+            </div>
+        </div>
+        <div class="submit_text03">
+            <div class="text_addr">
+                <div class="text_addr_txt">
+                    주소
+                </div>
+                <input type="text" id="user_addr">
+                <button type="button" class="btn">우편번호</button><br>
+                <select id="user_addr_group">
+                    <option value="">시·도</option>
+                    <option value="01234">서울특별시</option>
+                    <option value="01235">부산광역시</option>
+                    <option value="01236">경상남도</option>
+                    <option value="01237">경상북도</option>
+                </select>
+                <input type="text" id="user_addr_text" placeholder="나머지 주소">
+            </div>
+            <div class="text_email">
+                <div clss="text_email_txt">
+                    이메일<span class="refer">&nbsp;*</span>
+                </div>
+                <input type="text" id="email_id">
+                <span>@</span>
+                <input type="text" id="email_addr">
+                <select id="email_addr_group">
+                    <option value="">직접입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="nate.com">nate.com</option>
+                    <option value="daum.net">daum.net</option>
+                    <option value="gmail.com">gmail.com</option>
+                </select>
+            </div>
+        </div>
+        <div class="submit_text04">
+            <div class="text_marketing">
+                <div class="text_maketing_txt">
+                    마케팅 정보 수신동의
+                </div>
+                <label><input type="checkbox" id="SMS">&nbsp;SMS</label>
+                <label><input type="checkbox" id="email">&nbsp;이메일</label>
+                <p class="marketing_notice">※ 공지, 이벤트, 상품 소개 등 쇼핑 혜택에 대한 정보 수신에 동의합니다.</p>
+            </div>
+        </div>
+
+        <div class="submit_text05">
+            <div class="text_event">
+                <div class="text_event_txt">
+                    이벤트 코드
+                </div>
+                <input type="text" id="text_event">
+            </div>
+            <a href=""></a>
+            <div class="sign_up">
+                회원가입
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="link_wrap">
+            <div class="footer_login">
+                <a href="../Subpage/Login/Login.html">로그인</a>
+            </div>
+            <ul class="etc_link">
+                <li><a href="#">이용약관</a></li>
+                <li><strong><a href="#">개인정보처리방침</a></strong></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <div class="footer_symbol">
+                <img src="../../img/logo.png" alt="">
+            </div>
+            <div class="inf">
+                신성통상(주) / 대표자 : 황대규<br>
+                주소 : 서울 강동구 풍성로63길 84 신성빌딩<br>
+                통신판매업 신고번호 : 2015-서울강동-1890
+            </div>
+            <div class="footer_infobox">
+                <p>
+                    <span>사업자등록번호<br>
+                        104-81-01106</span>
+                    <a href="#"> 사업자 정보<br>확인</a>
+
+                </p>
+                <p>
+                    <span class="img">
+                        <img src="../../img/nh.png" alt="">
+                        채무보증안내
+                    </span>
+                    <a href="#"> 서비스가입<br>사실확인</a>
+
+                </p>
+            </div>
+        </div>
+    </footer>
+    <p class="copy">
+        © 2018 TOPTEN MALL. ALL RIGHTS RESERVED
+    </p>
+
+</body>
+
+</html>

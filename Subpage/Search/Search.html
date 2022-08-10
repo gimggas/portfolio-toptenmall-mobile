@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Search.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script defer src="js/Search.js"></script>
+
+</head>
+
+<body>
+
+
+    <div class="headerwrap">
+        <header class="header">
+            <div class="logo">
+                <a href="../../Main/Main.html"><img src="../img/logo.png" alt="로고"></a>
+            </div>
+            <input type="checkbox" id="hamBtn">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="../Subpage/Search/Search.html"><i class="xi-search"></i></a></li>
+                    <li><a href="#"><i class="xi-cart-o"></i></a></li>
+                    <label for="hamBtn" class="openBtn">
+                        <li><i class="xi-bars"></i> </li>
+                    </label>
+                </ul>
+            </nav>
+
+
+
+
+
+
+            <div class="MenuBox">
+                <div class="Menu">
+                    <label for="hamBtn" class="closeBtn">
+                        <div class="closeBox">
+                            <img src="../../Main/img/close.jpg" alt="">
+                        </div>
+                    </label>
+                    <div class="logoBox">
+                        <div class="logo">
+                            <img src="../img/logo.png" alt="">
+                        </div>
+                    </div>
+                    <a href="../Subpage/Login/Login.html">
+                        <a href="../Login/Login.html">
+                            <div class="login">로그인</div>
+                        </a>
+                    </a>
+
+                    <a href="../Subpage/Signup/Signup.html">
+                        <a href="../Signup/Signup.html">
+                            <div class="signup">회원가입</div>
+                        </a>
+                    </a>
+
+                    <input type="radio" id="tab01" name="radio01" checked>
+                    <input type="radio" id="tab02" name="radio01">
+                    <input type="radio" id="tab03" name="radio01">
+                    <div class="label">
+                        <label for="tab01" class="lab01">CATEGORY</label>
+                        <label for="tab02" class="lab02">BOARD</label>
+                        <label for="tab03" class="lab03">MY PAGE</label>
+                    </div>
+
+                    <div class="sheet">
+                        <div class="sheet1">
+                            <ul>
+                                <a href="../Sub.html">
+                                    <li> 남성</li>
+                                </a>
+                                <a href="#">
+                                    <li>여성</li>
+                                </a>
+                                <a href="#">
+                                    <li>아동</li>
+                                </a>
+                                <a href="#">
+                                    <li>아울렛</li>
+                                </a>
+                                <a href="#">
+                                    <li>웰컴썸머</li>
+                                </a>
+                                <a href="#">
+                                    <li>스토리즈</li>
+                                </a>
+                                <a href="#">
+                                    <li>기획전</li>
+                                </a>
+                                <a href="#">
+                                    <li>이벤트</li>
+                                </a>
+                                <a href="#">
+                                    <li>베스트리뷰</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="sheet2">
+                            <ul>
+                                <a href="#">
+                                    <li>공지사항</li>
+                                </a>
+                                <a href="#">
+                                    <li>이벤트</li>
+                                </a>
+                                <a href="#">
+                                    <li>상품후기</li>
+                                </a>
+                                <a href="#">
+                                    <li>상품문의</li>
+                                </a>
+                                <a href="#">
+                                    <li>FAQ</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="sheet3">
+                            <ul>
+                                <a href="#">
+                                    <li>주문조회</li>
+                                </a>
+                                <a href="#">
+                                    <li>회원정보</li>
+                                </a>
+                                <a href="#">
+                                    <li>관심상품</li>
+                                </a>
+                                <a href="#">
+                                    <li>적립금</li>
+                                </a>
+                                <a href="#">
+                                    <li>예치금</li>
+                                </a>
+                                <a href="#">
+                                    <li>쿠폰</li>
+                                </a>
+                                <a href="#">
+                                    <li>제품관리</li>
+                                </a>
+                                <a href="#">
+                                    <li>배송 주소록 관리</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+
+    <div class="wrap">
+        <div class="input">
+            <input type="text" class="color_name" placeholder="검색어를 입력하세요." autofocus>
+            <button type="button" class="btn">
+                <i class="xi-search"></i>
+            </button>
+        </div>
+        <div class="recent_search">
+            <div class="title">최근 검색어</div>
+            <div class="recent_search_list color_list"></div>
+        </div>
+        <div class="popular_search">
+            <div class="title">인기 검색어</div>
+            <div class="recent_search_list">
+                <ol>
+                    <li>BALANCE</li>
+                    <li>반바지</li>
+                    <li>래쉬가드</li>
+                    <li>반팔티</li>
+                    <li>쿨에어</li>
+                    <li>원피스</li>
+                    <li>린넨</li>
+                    <li>셔츠</li>
+                    <li>오버핏</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recently_viewed">
+            <div class="title">최근 본 상품</div>
+            <div class="recently_viewed_product">
+                최근 본 상품이 없습니다.
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="link_wrap">
+            <div class="footer_login">
+                <a href="../Login/Login.html">로그인</a>
+            </div>
+            <ul class="etc_link">
+                <li><a href="#">이용약관</a></li>
+                <li><strong><a href="#">개인정보처리방침</a></strong></li>
+            </ul>
+        </div>
+        <div class="footer_info">
+            <div class="footer_symbol">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="inf">
+                신성통상(주) / 대표자 : 황대규<br>
+                주소 : 서울 강동구 풍성로63길 84 신성빌딩<br>
+                통신판매업 신고번호 : 2015-서울강동-1890
+            </div>
+            <div class="footer_infobox">
+                <p>
+                    <span>사업자등록번호<br>
+                        104-81-01106</span>
+                    <a href="#"> 사업자 정보<br>확인</a>
+
+                </p>
+                <p>
+                    <span class="img">
+                        <img src="../img/nh.png" alt="">
+                        채무보증안내
+                    </span>
+                    <a href="#"> 서비스가입<br>사실확인</a>
+
+                </p>
+            </div>
+        </div>
+    </footer>
+    <p class="copy">
+        © 2018 TOPTEN MALL. ALL RIGHTS RESERVED
+    </p>
+
+
+
+
+
+</body>
+
+</html>

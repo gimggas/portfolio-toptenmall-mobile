@@ -1,0 +1,589 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------header-------------------- */
+
+.headerwrap {
+  height: 55px;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+  padding: 0 10px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.header .logo,
+.header .gnb {
+  float: left;
+}
+
+.header .logo {
+  width: 215px;
+  height: 13px;
+  margin: 20px 0;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .gnb {
+  width: 90px;
+  height: 26px;
+  margin: 9px 0;
+  float: right;
+  margin-right: 15px;
+}
+
+.header .gnb ul li {
+  width: 30px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+  float: left;
+}
+
+.header .gnb i {
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+.box {
+  height: 49px;
+}
+
+#hamBtn {
+  display: none;
+}
+
+#hamBtn:checked ~ .MenuBox .Menu {
+  right: 0;
+}
+
+#hamBtn ~ .MenuBox .Menu {
+  right: -330px;
+}
+
+.Menu {
+  width: 75%;
+  height: 100%;
+  position: fixed;
+  /* right: -1px; */
+  top: -1px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 0 10px;
+  transition: all 0.3s 0.1s;
+}
+
+.Menu .closeBox {
+  height: 22px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  position: absolute;
+  left: -22px;
+  top: -2px;
+  cursor: pointer;
+}
+
+.Menu .logoBox {
+  height: 30px;
+}
+
+.Menu .logo {
+  width: 90%;
+  height: 14px;
+  margin-left: 12px;
+}
+
+.Menu .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.Menu .login {
+  height: 37px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  line-height: 37px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.Menu .signup {
+  height: 37px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  line-height: 37px;
+  font-weight: bold;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+#tab01,
+#tab02,
+#tab03 {
+  display: none;
+}
+
+#tab01 ~ .sheet .sheet1 {
+  display: block;
+}
+
+#tab01 ~ .sheet .sheet2 {
+  display: none;
+}
+
+#tab01 ~ .sheet .sheet3 {
+  display: none;
+}
+
+#tab02:checked ~ .sheet .sheet1 {
+  display: none;
+}
+
+#tab02:checked ~ .sheet .sheet2 {
+  display: block;
+}
+
+#tab02:checked ~ .sheet .sheet3 {
+  display: none;
+}
+
+#tab03:checked ~ .sheet .sheet1 {
+  display: none;
+}
+
+#tab03:checked ~ .sheet .sheet2 {
+  display: none;
+}
+
+#tab03:checked ~ .sheet .sheet3 {
+  display: block;
+}
+
+#tab01:checked ~ .label .lab01 {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+#tab02:checked ~ .label .lab02 {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+#tab03:checked ~ .label .lab03 {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.label {
+  overflow: hidden;
+}
+
+.label label {
+  display: block;
+  width: 33%;
+  height: 36px;
+  color: #ddd;
+  font-size: 13px;
+  text-align: center;
+  line-height: 36px;
+  font-weight: bold;
+  float: left;
+  border-bottom: 2px solid #ddd;
+  box-sizing: border-box;
+  margin-top: 27px;
+  cursor: pointer;
+}
+
+.sheet > div li {
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px dotted #ddd;
+  box-sizing: border-box;
+}
+
+/* ---------------------header-------------------- */
+
+select {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+input {
+  height: 30px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+/* ---------------------submit-------------------- */
+.wrap {
+  padding: 0 15px;
+}
+
+.submit_text01 {
+  height: 210px;
+  border-bottom: 1px solid #ddd;
+}
+
+.refer {
+  color: red;
+}
+
+.text_id {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.text_id_txt {
+  margin-top: 5px;
+}
+
+.text_pw {
+  margin-bottom: 20px;
+}
+
+.text_pw_txt {
+  margin-bottom: 5px;
+}
+.text_pw_check_txt {
+  margin-bottom: 5px;
+}
+
+#id_input {
+  width: 80%;
+  height: 30px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.text_id_input button {
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 6px;
+  background-color: white;
+  transform: translateY(2px);
+}
+
+#pw_input,
+#pw_check_input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* ---------------------submit_text01-------------------- */
+
+/* ---------------------submit_text02-------------------- */
+
+.submit_text02 {
+  height: 270px;
+  margin: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.text_name {
+  height: 50px;
+}
+
+.text_name_txt,
+.text_name_input {
+  float: left;
+}
+
+#name_input {
+  height: 30px;
+  border: 1px solid #ddd;
+  margin-left: 50px;
+}
+
+.text_birth div {
+  float: left;
+}
+
+.text_birth_txt {
+  margin-right: 30px;
+}
+
+.birth {
+  width: 75%;
+  margin-bottom: 5px;
+}
+
+.marketing_notice {
+  color: #999;
+  font-size: 11px;
+}
+
+#user_tel,
+#tel_first,
+#tel_last {
+  width: 100px;
+  height: 30px;
+}
+
+.text_phone_number {
+  margin: 15px 0;
+}
+
+.text_phone_number_txt {
+  margin-bottom: 5px;
+}
+
+.text_contact_txt {
+  margin-bottom: 5px;
+}
+
+/* ---------------------submit_text02-------------------- */
+
+/* ---------------------submit_text03-------------------- */
+
+.text_addr_txt,
+#user_addr,
+button {
+  float: left;
+}
+
+#email_id {
+  margin-top: 5px;
+}
+
+.submit_text03 {
+  height: 220px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.text_addr {
+  margin-bottom: 20px;
+}
+
+#user_addr {
+  width: 200px;
+  height: 30px;
+  margin-left: 50px;
+}
+
+.submit_text03 .btn {
+  width: 80px;
+  height: 34px;
+  margin-left: 5px;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+#user_addr_group {
+  width: 100px;
+  height: 33px;
+}
+
+#user_addr_text {
+  width: 260px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+#email_addr_group {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+/* ---------------------submit_text03-------------------- */
+/* ---------------------submit_text04-------------------- */
+
+.submit_text04 {
+  height: 100px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 20px 0;
+}
+
+/* ---------------------submit_text04-------------------- */
+/* ---------------------submit_text05-------------------- */
+
+.text_event_txt {
+  margin-top: 20px;
+}
+
+#text_event {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.sign_up {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  background-color: black;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* ---------------------submit_text05-------------------- */
+/* --------------------footer------------------------ */
+
+.link_wrap .footer_login,
+.link_wrap .etc_link {
+  font-size: 10px;
+  float: left;
+}
+
+.link_wrap .etc_link {
+  float: right;
+}
+
+.link_wrap .etc_link li {
+  float: left;
+}
+
+.footer {
+  padding: 0 10px;
+  height: 180px;
+  background-color: #ddd;
+}
+
+.footer .link_wrap {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.footer .etc_link li {
+  margin-left: 10px;
+}
+
+.footer_info .footer_symbol {
+  width: 170px;
+  height: 10px;
+  margin: 15px 0;
+}
+
+.footer_info .footer_symbol img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer_info .inf {
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.footer_info .footer_infobox p {
+  width: 50%;
+  height: 30px;
+  font-size: 11px;
+  float: left;
+  margin-top: 20px;
+}
+
+.footer_info .footer_infobox span,
+.footer_info .footer_infobox a {
+  float: left;
+}
+
+.footer_info .footer_infobox span {
+  margin-right: 5px;
+}
+
+.footer_info .footer_infobox a {
+  width: 65px;
+  height: 30px;
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.footer_info .footer_infobox .img {
+  width: 77px;
+  height: 11px;
+}
+
+.footer_info .footer_infobox .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.copy {
+  height: 50px;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 11px;
+  background-color: #ddd;
+}
+/* --------------------footer------------------------ */

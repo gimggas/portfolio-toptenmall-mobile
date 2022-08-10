@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ---------------------header-------------------- */
+
+.headerwrap {
+  height: 49px;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+  padding: 0 10px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.header .logo,
+.header .gnb {
+  float: left;
+}
+
+.header .logo {
+  width: 215px;
+  height: 13px;
+  margin: 20px 0;
+}
+
+.header .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .gnb {
+  width: 90px;
+  height: 26px;
+  margin: 9px 0;
+  float: right;
+  margin-right: 15px;
+}
+
+.header .gnb ul li {
+  width: 30px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 20px;
+  float: left;
+}
+
+.header .gnb i {
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+.box {
+  height: 49px;
+}
+
+#hamBtn {
+  display: none;
+}
+
+#hamBtn:checked ~ .MenuBox .Menu {
+  right: 0;
+}
+
+#hamBtn ~ .MenuBox .Menu {
+  right: -330px;
+}
+
+.Menu {
+  width: 75%;
+  height: 100%;
+  position: fixed;
+  /* right: -1px; */
+  top: -1px;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 0 10px;
+  transition: all 0.3s 0.1s;
+}
+
+.Menu .closeBox {
+  height: 22px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  position: absolute;
+  left: -22px;
+  top: -2px;
+  cursor: pointer;
+}
+
+.Menu .logoBox {
+  height: 30px;
+}
+
+.Menu .logo {
+  width: 90%;
+  height: 14px;
+  margin-left: 12px;
+}
+
+.Menu .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.Menu .login {
+  height: 37px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  line-height: 37px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.Menu .signup {
+  height: 37px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+  line-height: 37px;
+  font-weight: bold;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+#tab01,
+#tab02,
+#tab03 {
+  display: none;
+}
+
+#tab01 ~ .sheet .sheet1 {
+  display: block;
+}
+
+#tab01 ~ .sheet .sheet2 {
+  display: none;
+}
+
+#tab01 ~ .sheet .sheet3 {
+  display: none;
+}
+
+#tab02:checked ~ .sheet .sheet1 {
+  display: none;
+}
+
+#tab02:checked ~ .sheet .sheet2 {
+  display: block;
+}
+
+#tab02:checked ~ .sheet .sheet3 {
+  display: none;
+}
+
+#tab03:checked ~ .sheet .sheet1 {
+  display: none;
+}
+
+#tab03:checked ~ .sheet .sheet2 {
+  display: none;
+}
+
+#tab03:checked ~ .sheet .sheet3 {
+  display: block;
+}
+
+#tab01:checked ~ .label .lab01 {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+#tab02:checked ~ .label .lab02 {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+#tab03:checked ~ .label .lab03 {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.label {
+  overflow: hidden;
+}
+
+.label label {
+  display: block;
+  width: 33%;
+  height: 36px;
+  color: #ddd;
+  font-size: 13px;
+  text-align: center;
+  line-height: 36px;
+  font-weight: bold;
+  float: left;
+  border-bottom: 2px solid #ddd;
+  box-sizing: border-box;
+  margin-top: 27px;
+  cursor: pointer;
+}
+
+.sheet > div li {
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  border-bottom: 1px dotted #ddd;
+  box-sizing: border-box;
+}
+
+/* ---------------------header-------------------- */
+.delete {
+  margin-left: 100px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.delete:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+/* ---------------input-------------- */
+
+.wrap {
+  padding: 0 20px;
+}
+
+.color_name {
+  width: 100%;
+  margin: 20px 0;
+  padding: 5px 0;
+  border: 0;
+  border-bottom: 2px solid black;
+}
+
+.input button {
+  float: right;
+  font-size: 20px;
+  border: 0;
+  background-color: white;
+  transform: translateY(-45px);
+}
+
+.search {
+  position: absolute;
+  font-size: 20px;
+  right: 25px;
+  top: 73px;
+}
+
+.recent_search {
+  margin: 10px 0;
+}
+
+.recent_search .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.recent_search .recent_search_list {
+  height: 200px;
+  margin: 15px 0;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
+
+.popular_search {
+}
+
+.popular_search .title {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.popular_search ol {
+  padding: 15px 20px;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
+
+.popular_search ol li {
+  list-style: block;
+  margin-bottom: 5px;
+}
+
+.recently_viewed .title {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+.recently_viewed_product {
+  height: 150px;
+  color: #999;
+  font-size: 11px;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* ---------------input-------------- */
+/* --------------------footer------------------------ */
+
+.link_wrap .footer_login,
+.link_wrap .etc_link {
+  font-size: 10px;
+  float: left;
+}
+
+.link_wrap .etc_link {
+  float: right;
+}
+
+.link_wrap .etc_link li {
+  float: left;
+}
+
+.footer {
+  padding: 0 10px;
+  height: 180px;
+  background-color: #ddd;
+}
+
+.footer .link_wrap {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.footer .etc_link li {
+  margin-left: 10px;
+}
+
+.footer_info .footer_symbol {
+  width: 170px;
+  height: 10px;
+  margin: 15px 0;
+}
+
+.footer_info .footer_symbol img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer_info .inf {
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.footer_info .footer_infobox p {
+  width: 50%;
+  height: 30px;
+  font-size: 11px;
+  float: left;
+  margin-top: 20px;
+}
+
+.footer_info .footer_infobox span,
+.footer_info .footer_infobox a {
+  float: left;
+}
+
+.footer_info .footer_infobox span {
+  margin-right: 5px;
+}
+
+.footer_info .footer_infobox a {
+  width: 65px;
+  height: 30px;
+  font-size: 10px;
+  text-align: center;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.footer_info .footer_infobox .img {
+  width: 77px;
+  height: 11px;
+}
+
+.footer_info .footer_infobox .img img {
+  width: 100%;
+  height: 100%;
+}
+
+.copy {
+  height: 50px;
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 11px;
+  background-color: #ddd;
+}
+/* --------------------footer------------------------ */
